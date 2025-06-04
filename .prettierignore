@@ -1,0 +1,11 @@
+node_modules
+.turbo
+dist
+build
+.next
+.expo
+coverage
+
+# Specific files
+package-lock.json
+pnpm-lock.yaml

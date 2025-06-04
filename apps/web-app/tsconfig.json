@@ -1,0 +1,37 @@
+{
+  "extends": "@mobilepantry/config/tsconfig.base.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    // Include local config files if they are .ts
+    "tailwind.config.ts", 
+    // "postcss.config.ts", // if you use .ts extension
+    // "next.config.ts" // if you use .ts extension
+  ],
+  "exclude": ["node_modules"]
+}

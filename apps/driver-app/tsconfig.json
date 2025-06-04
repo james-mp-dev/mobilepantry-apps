@@ -1,0 +1,27 @@
+{
+  "extends": "@mobilepantry/config/tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-native",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    // Paths for local imports if needed
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }
+    "baseUrl": ".", // This must be specified if "paths" is specified.
+    "lib": ["ESNext"], // Add DOM if you use web features with NativeWind, otherwise keep minimal
+    "target": "ESNext"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "App.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js", 
+    "tailwind.config.js"
+  ]
+}
